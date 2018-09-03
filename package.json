@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --config=jest.config.json",
     "serve": "live-server public/",
-    "build": "webpack",
+    "build:prod": "webpack --env production",
     "dev-server": "webpack-dev-server"
   },
   "author": "realTrueProger",
@@ -27,6 +27,7 @@
     "eslint-plugin-react": "^7.11.1",
     "jest": "^23.5.0",
     "live-server": "^1.2.0",
+    "mini-css-extract-plugin": "^0.4.2",
     "moment": "^2.22.2",
     "node-sass": "^4.9.3",
     "normalize.css": "^8.0.0",
