@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>test redux</h1>
+    <ul></ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.0/redux.js">
+    </script>
+
+    <script>
+    
+        const listElement = document.querySelector('ul');
+
+        const renderLi = (arr) => {
+            listElement.innerHTML = '';
+            arr.forEach(element => {
+                let li = document.createElement('li');
+                li.innerHTML = element;
+                listElement.appendChild(li);
+            });
+        }
+
+        const store = Redux.createStore((state = [], action) => {
+            switch (action.type) {
+                case ('ADD_ELEMENT'):
+                    return [...state, action.element];
+                default:
+                    return state;
+            }
+        });
+
+        const addElement = (element) => ({
+            type: 'ADD_ELEMENT',
+            element
+        });
+
+        store.subscribe(() => {
+            const state = store.getState();
+            renderLi(state);
+            console.log('state changed');
+            
+        })
+        
+        store.dispatch(addElement('item one'));
+        store.dispatch(addElement('item two'));
+        
+    </script>
+</body>
+</html>
