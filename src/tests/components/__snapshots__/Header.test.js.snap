@@ -20,12 +20,5 @@ exports[`Should render Header component 1`] = `
   >
     Create expense
   </NavLink>
-  <NavLink
-    activeClassName="is-active"
-    aria-current="page"
-    to="/help"
-  >
-    Get help
-  </NavLink>
 </header>
 `;

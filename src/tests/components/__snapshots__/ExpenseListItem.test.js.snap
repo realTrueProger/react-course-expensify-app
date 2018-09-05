@@ -16,7 +16,7 @@ exports[`should render expense list item 1`] = `
     Amount: 
     10000
      CreatedAt: 
-    0
+    January 1st 1970
   </p>
 </div>
 `;
