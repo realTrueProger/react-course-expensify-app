@@ -7,7 +7,9 @@
     "test": "jest --config=jest.config.json",
     "serve": "live-server public/",
     "build:prod": "webpack --env production",
-    "dev-server": "webpack-dev-server"
+    "dev-server": "webpack-dev-server",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build:prod"
   },
   "author": "realTrueProger",
   "license": "ISC",
@@ -25,6 +27,7 @@
     "enzyme-to-json": "^3.3.4",
     "eslint": "^5.4.0",
     "eslint-plugin-react": "^7.11.1",
+    "express": "^4.16.3",
     "jest": "^23.5.0",
     "live-server": "^1.2.0",
     "mini-css-extract-plugin": "^0.4.2",

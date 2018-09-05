@@ -6,7 +6,6 @@ const Header = () => (
         <h1>Expensify app</h1>
         <NavLink to="/" activeClassName="is-active" exact={true}>Home page</NavLink>
         <NavLink to="/create" activeClassName="is-active">Create expense</NavLink>
-        <NavLink to="/help" activeClassName="is-active">Get help</NavLink>
     </header>
 );
 

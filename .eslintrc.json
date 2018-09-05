@@ -39,7 +39,7 @@
         ],
         "no-console": "off",
         "react/prop-types": [
-            "enabled",
+            1,
             {
                 "ignore": "ignore",
                 "customValidators": "customValidator"
