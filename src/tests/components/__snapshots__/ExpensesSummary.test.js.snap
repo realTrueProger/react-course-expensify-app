@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1 expense total with $10000 1`] = `
+<div>
+  <p>
+    You have 
+    1
+     expense(s) with total cost $
+    10000
+  </p>
+</div>
+`;
+
+exports[`should render 3 expenses total with $21000 1`] = `
+<div>
+  <p>
+    You have 
+    3
+     expense(s) with total cost $
+    21000
+  </p>
+</div>
+`;
